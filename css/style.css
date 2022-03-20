@@ -1,0 +1,448 @@
+/* Variabler */
+:root {
+    --dark: rgb(19, 19, 19);
+    --light: rgb(235, 235, 235);
+    --accent: rgb(38, 0, 87);
+}
+
+/* Importera typsnitt */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700&display=swap');
+
+/* Nollställning */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+/* DESKTOPSTORLEK */
+@media screen and(min-width: 601px) {
+    #heroimg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -99999;
+    }
+
+    #heroh1 {
+        color: white;
+        text-shadow: 1px 1px 5px black, 1px 1px 5px black;
+    }
+
+    #logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--dark);
+        font-size: 2em;
+        text-decoration: none;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 25px 50px;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.082);
+    }
+
+    header nav ul {
+        display: flex;
+        list-style-type: none;
+        gap: 25px;
+    }
+
+    header nav ul li a {
+        color: var(--dark);
+        font-weight: 600;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        min-height: 60vh;
+        padding-top: 50px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .herosection {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cta {
+        background-color: var(--accent);
+        padding: 10px 25px;
+        color: var(--light);
+        font-weight: 600;
+    }
+
+    .maindiv {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    aside h2 {
+        margin-bottom: 10px;
+    }
+
+    aside button {
+        width: 100%;
+        padding: 5%;
+        background-color: var(--dark);
+        color: var(--light);
+        border: none;
+        margin-bottom: 15px;
+    }
+
+    aside nav ul {
+        list-style-type: none;
+        margin-top: 15px;
+    }
+
+    aside nav ul li button {
+        padding: 5%;
+        background-color: var(--accent);
+        color: var(--light);
+        border: none;
+        margin-bottom: 15px;
+    }
+
+    .productssection {
+        width: 75%;
+        padding-bottom: 200px;
+    }
+
+    .staffsection {
+        width: 50%;
+        padding-bottom: 200px;
+    }
+
+    .td1 img {
+        border-radius: 50%;
+        object-position: center;
+        object-fit: cover;
+        width: 100px;
+        height: 100px;
+    }
+
+    .productssection h2, .staffsection h2 {
+        margin-bottom: 25px;
+    }
+
+    .productstable, .stafftable {
+        width: 100%;
+    }
+
+    .producttd1 {
+        width: 15%;
+    }
+
+    .producttd2 {
+        width: 60%;
+    }
+
+    .producttd3 {
+        width: 15%;
+    }
+
+    .producttd4 {
+        width: 10%;
+    }
+
+    .producttd4 a, .td4 a {
+        padding: 5%;
+        background-color: var(--accent);
+        color: var(--light);
+    }
+
+    .productstable td {
+        padding-bottom: 50px;
+    }
+
+    .aboutsection {
+        width: 50%;
+        margin: 50px 0;
+    }
+
+    .openarticle {
+        width: 25%;
+    }
+
+    .opendiv {
+        display: flex;
+        gap: 25px;
+    }
+
+    .contactsection {
+        margin-top: 50px;
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .openarticle h2 {
+        margin-bottom: 25px;
+    }
+
+    .contactarticle {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 25%;
+    }
+
+    .contactarticle div p {
+        white-space: nowrap;
+    }
+}
+
+/* MOBILSTORLEK */
+@media screen and (max-width: 600px) {
+    #heroimg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -99999;
+    }
+
+    #heroh1 {
+        color: white;
+        text-shadow: 1px 1px 5px black, 1px 1px 5px black;
+    }
+
+    #logo {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        color: var(--dark);
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+
+    #logo img {
+        width: 40px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 2em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 25px;
+        justify-content: space-between;
+        background-color: white;
+        box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.082);
+        gap: 25px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        gap: 25px;
+        width: 100%;
+    }
+
+    header nav ul li a {
+        color: var(--dark);
+        font-weight: 600;
+        font-size: .9em;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        min-height: 60vh;
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .herosection {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .cta {
+        background-color: var(--accent);
+        padding: 10px 25px;
+        color: var(--light);
+        font-weight: 600;
+    }
+
+    .maindiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    aside {
+        margin-bottom: 25px;
+    }
+
+    aside h2 {
+        margin-bottom: 10px;
+    }
+
+    aside button {
+        width: 100%;
+        padding: 5%;
+        background-color: var(--dark);
+        color: var(--light);
+        border: none;
+        margin-bottom: 15px;
+    }
+
+    aside nav ul {
+        list-style-type: none;
+        margin-top: 15px;
+    }
+
+    aside nav ul li button {
+        padding: 5%;
+        background-color: var(--accent);
+        color: var(--light);
+        border: none;
+        margin-bottom: 15px;
+    }
+
+    .productssection {
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+    .staffsection {
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+    .td1 img {
+        border-radius: 50%;
+        object-position: center;
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+    }
+
+    .productssection h2, .staffsection h2 {
+        margin-bottom: 15px;
+    }
+
+    .productstable, .stafftable {
+        width: 100%;
+        font-size: .9em;
+    }
+
+    .producttd1 {
+        width: 5%;
+    }
+
+    .producttd1 img {
+        width: 50px;
+    }
+
+    .producttd2 {
+        width: 60%;
+    }
+
+    .producttd3 {
+        width: 15%;
+    }
+
+    .producttd4 {
+        width: 20%;
+    }
+
+    .producttd4 a, .td4 a {
+        padding: 5%;
+        background-color: var(--accent);
+        color: var(--light);
+        white-space: nowrap;
+    }
+
+    .productstable td {
+        padding-bottom: 50px;
+    }
+
+    .stafftable {
+        margin-top: 25px;
+    }
+
+    .aboutsection {
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    .openarticle {
+        width: 50%;
+        margin: auto;
+    }
+
+    .opendiv {
+        display: flex;
+        gap: 15px;
+    }
+
+    .contactsection {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .openarticle h2 {
+        margin-bottom: 15px;
+    }
+
+    .contactarticle {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 50%;
+        margin-top: 25px;
+    }
+
+    .contactarticle div p {
+        white-space: nowrap;
+    }
+}
