@@ -1,9 +1,9 @@
 "use strict";
 
 // URL:er till API:er
-const companyurl = "https://localhost:7138/api/APICompany";
-const producturl = "https://localhost:7138/api/APIProducts";
-const productcategoryurl = "https://localhost:7138/api/APIProductCategories";
+const companyurl = "https://dt191g-projekt.azurewebsites.net/api/APICompany";
+const producturl = "https://dt191g-projekt.azurewebsites.net/api/APIProducts";
+const productcategoryurl = "https://dt191g-projekt.azurewebsites.net/api/APIProductCategories";
 
 // HTML-ELEMENT
 // Startsidan
